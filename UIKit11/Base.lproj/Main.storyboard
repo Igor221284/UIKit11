@@ -1,24 +1,294 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIKit11" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="154_films_1024x768" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T7U-WH-IIS">
+                                <rect key="frame" x="10" y="54" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="Vsf-DF-PIt"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="c4D-96-hLj"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="hLc-zt-eEU">
+                                <rect key="frame" x="100" y="54" width="132" height="65.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя Фамилия" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4CE-aI-qgB">
+                                        <rect key="frame" x="0.0" y="0.0" width="132" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJA-cJ-SqH">
+                                        <rect key="frame" x="0.0" y="30" width="88.5" height="11.5"/>
+                                        <color key="tintColor" systemColor="systemCyanColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" cornerStyle="dynamic" titleAlignment="leading">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Установить статус">
+                                                    <attributes>
+                                                        <font key="NSFont" size="10" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="online" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="lPt-FJ-hjX">
+                                        <rect key="frame" x="0.0" y="47.5" width="41.5" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHv-Gy-L8R">
+                                <rect key="frame" x="10" y="144" width="394" height="28"/>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Редактировать">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oey-F9-zyE">
+                                <rect key="frame" x="10" y="182" width="394" height="55"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrZ-to-88x">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="55"/>
+                                        <color key="tintColor" systemColor="systemCyanColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" imagePlacement="top" imagePadding="10">
+                                            <imageReference key="image" image="camera" catalog="system" symbolScale="medium"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" weight="bold">
+                                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="20"/>
+                                            </preferredSymbolConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="История">
+                                                    <attributes>
+                                                        <font key="NSFont" size="18" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhY-B4-ahp">
+                                        <rect key="frame" x="130" y="0.0" width="61" height="55"/>
+                                        <color key="tintColor" systemColor="systemCyanColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" imagePlacement="top" imagePadding="10">
+                                            <imageReference key="image" image="square.and.pencil" catalog="system" symbolScale="medium"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" weight="bold">
+                                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="20"/>
+                                            </preferredSymbolConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Запись">
+                                                    <attributes>
+                                                        <font key="NSFont" size="18" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUc-ZS-ocy">
+                                        <rect key="frame" x="248.5" y="0.0" width="44.5" height="55"/>
+                                        <color key="tintColor" systemColor="systemCyanColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" imagePlacement="top" imagePadding="10">
+                                            <imageReference key="image" image="photo" catalog="system" symbolScale="medium"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" weight="bold">
+                                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="20"/>
+                                            </preferredSymbolConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Фото">
+                                                    <attributes>
+                                                        <font key="NSFont" size="18" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlN-rf-374">
+                                        <rect key="frame" x="351" y="0.0" width="43" height="55"/>
+                                        <color key="tintColor" systemColor="systemCyanColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" imagePlacement="top" imagePadding="10">
+                                            <imageReference key="image" image="play.circle" catalog="system" symbolScale="medium"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" weight="bold">
+                                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="20"/>
+                                            </preferredSymbolConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Клип">
+                                                    <attributes>
+                                                        <font key="NSFont" size="18" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="B4b-Fq-fBg">
+                                <rect key="frame" x="10" y="254" width="30" height="34.5"/>
+                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="0lb-3l-hmJ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="AWC-0i-xxX"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                </preferredSymbolConfiguration>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dot.radiowaves.up.forward" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="P4Y-wF-JXr">
+                                <rect key="frame" x="10" y="299.5" width="30" height="25"/>
+                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="y9E-fk-0rs"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="yhL-tb-zVZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Город: Москва" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLw-ex-7sg">
+                                <rect key="frame" x="50" y="262" width="117" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35 Подписчиков" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AmA-Gd-Or5">
+                                <rect key="frame" x="50" y="307.5" width="131.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRN-1R-xpJ">
+                                <rect key="frame" x="10" y="338" width="185.5" height="28.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QRN-1R-xpJ" secondAttribute="height" multiplier="203:31" id="5F5-Q3-A8l"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemCyanColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="leading" title="Указать место работы" imagePadding="10">
+                                    <imageReference key="image" image="briefcase" catalog="system" symbolScale="large"/>
+                                    <backgroundConfiguration key="background" strokeWidth="0.0" strokeOutset="0.0"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="1" bottom="0.0" trailing="0.0"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ye0-Kl-KK6">
+                                <rect key="frame" x="10" y="376.5" width="165.5" height="33"/>
+                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="leading" title="Получить подарок" imagePadding="10" titleAlignment="center">
+                                    <imageReference key="image" image="snowflake" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="22" scale="large"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="1" bottom="0.0" trailing="0.0"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceP-Tg-E83">
+                                <rect key="frame" x="10" y="419.5" width="204.5" height="28.5"/>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Подробная информация" imagePadding="10">
+                                    <imageReference key="image" image="info.circle.fill" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="19"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="1" bottom="0.0" trailing="0.0"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                        <constraints>
+                            <constraint firstItem="ceP-Tg-E83" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="1uH-TP-MUX"/>
+                            <constraint firstItem="hLc-zt-eEU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="3x5-jc-3yU"/>
+                            <constraint firstItem="AmA-Gd-Or5" firstAttribute="top" secondItem="CLw-ex-7sg" secondAttribute="bottom" constant="25" id="50u-fD-zs7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nHv-Gy-L8R" secondAttribute="trailing" constant="10" id="7iI-Kd-AEd"/>
+                            <constraint firstItem="CLw-ex-7sg" firstAttribute="leading" secondItem="B4b-Fq-fBg" secondAttribute="trailing" constant="10" id="Adq-yZ-pBf"/>
+                            <constraint firstItem="B4b-Fq-fBg" firstAttribute="top" secondItem="oey-F9-zyE" secondAttribute="bottom" constant="20" id="DSn-Aa-54e"/>
+                            <constraint firstItem="QRN-1R-xpJ" firstAttribute="top" secondItem="AmA-Gd-Or5" secondAttribute="bottom" constant="10" id="EI7-XH-T2X"/>
+                            <constraint firstItem="Ye0-Kl-KK6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="FXL-RV-nB8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nHv-Gy-L8R" secondAttribute="trailing" constant="10" id="KCE-A1-7yQ"/>
+                            <constraint firstItem="ceP-Tg-E83" firstAttribute="top" secondItem="Ye0-Kl-KK6" secondAttribute="bottom" constant="10" id="Lev-bi-qth"/>
+                            <constraint firstItem="nHv-Gy-L8R" firstAttribute="top" secondItem="T7U-WH-IIS" secondAttribute="bottom" constant="10" id="NBB-9w-RpK"/>
+                            <constraint firstItem="nHv-Gy-L8R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="PJ3-LW-IOz"/>
+                            <constraint firstItem="QRN-1R-xpJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="POZ-BT-QFx"/>
+                            <constraint firstItem="nHv-Gy-L8R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Qcz-7u-9M0"/>
+                            <constraint firstItem="Ye0-Kl-KK6" firstAttribute="top" secondItem="QRN-1R-xpJ" secondAttribute="bottom" constant="10" id="Tuo-cb-oXu"/>
+                            <constraint firstItem="P4Y-wF-JXr" firstAttribute="leading" secondItem="B4b-Fq-fBg" secondAttribute="leading" id="WNw-JD-qof"/>
+                            <constraint firstItem="Ye0-Kl-KK6" firstAttribute="top" secondItem="QRN-1R-xpJ" secondAttribute="bottom" constant="10" id="WsA-DU-1Ge"/>
+                            <constraint firstItem="T7U-WH-IIS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="XRH-Z9-aGP"/>
+                            <constraint firstItem="hLc-zt-eEU" firstAttribute="leading" secondItem="T7U-WH-IIS" secondAttribute="trailing" constant="10" id="YFF-59-Pwx"/>
+                            <constraint firstItem="oey-F9-zyE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="YRL-kf-4YS"/>
+                            <constraint firstItem="B4b-Fq-fBg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="f8M-8U-uli"/>
+                            <constraint firstItem="oey-F9-zyE" firstAttribute="top" secondItem="nHv-Gy-L8R" secondAttribute="bottom" constant="10" id="kMk-iQ-zyX"/>
+                            <constraint firstItem="AmA-Gd-Or5" firstAttribute="leading" secondItem="P4Y-wF-JXr" secondAttribute="trailing" constant="10" id="keg-AH-2sD"/>
+                            <constraint firstItem="T7U-WH-IIS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="rqV-51-VyL"/>
+                            <constraint firstItem="P4Y-wF-JXr" firstAttribute="top" secondItem="B4b-Fq-fBg" secondAttribute="bottom" constant="10" id="tcg-O5-rnA"/>
+                            <constraint firstItem="CLw-ex-7sg" firstAttribute="top" secondItem="oey-F9-zyE" secondAttribute="bottom" constant="25" id="vTo-Ro-Alp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oey-F9-zyE" secondAttribute="trailing" constant="10" id="xH9-UD-q0w"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="rangoImage" destination="T7U-WH-IIS" id="29A-UF-W4h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="154_films_1024x768" width="1024" height="768"/>
+        <image name="briefcase" catalog="system" width="128" height="105"/>
+        <image name="camera" catalog="system" width="128" height="94"/>
+        <image name="dot.radiowaves.up.forward" catalog="system" width="128" height="112"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
+        <image name="play.circle" catalog="system" width="128" height="121"/>
+        <image name="snowflake" catalog="system" width="121" height="128"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="115"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
